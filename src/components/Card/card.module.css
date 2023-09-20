@@ -1,0 +1,44 @@
+.mainContainer{
+    display: flex;
+    padding: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.iconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.textContainer{
+    width: 90%;
+    padding: 8px;
+}
+
+.glassEffect{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(189, 45, 105, 1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    transition : background ease 0.5s;
+}
+
+.title{
+    color : #F1FAEE;
+    font-weight: bold;
+}
+.text{
+    color : #A8DADC;
+    font-size: 16px;
+}
+
+.glassEffect:hover{
+    background: rgba(255, 255, 255, 0.14);
+}

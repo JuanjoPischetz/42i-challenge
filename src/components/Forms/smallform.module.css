@@ -1,0 +1,83 @@
+.inputBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.formBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.inputLine{
+    margin-bottom: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    border-radius: 2px;
+    color : #A8DADC;
+    font-size:small;
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    height: 24px;
+}
+
+.button{
+    margin-top: 16px;
+    cursor: pointer;
+    padding: 8px 16px 8px 16px;
+    font-size: 16px;
+    color : #F1FAEE;
+    font-weight: lighter;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    transition : all ease 0.3s;
+}
+.button:disabled{
+    cursor: auto;
+    opacity: 50%;
+}
+
+.buttonsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 16px;
+}
+
+.glassEffect{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(189, 45, 105, 1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.title{
+    color : #F1FAEE;
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.text{
+    color : #A8DADC;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+
+.resetButton:hover{
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0px 16px rgba(230, 57, 70, 1);
+}
+
+.calculateButton:hover{
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0px 16px rgba(168, 218, 220, 1);
+}

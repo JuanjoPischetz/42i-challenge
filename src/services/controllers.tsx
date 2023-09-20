@@ -42,3 +42,15 @@ export const nonConstructibleChange = (arr : number[])=>{
     }
     return sum + 1
 }
+
+
+//This function receives an string and returns an integer array
+
+export const transformToIntegerArray = (argument : string) =>{
+    const cleanArgument = argument.replace(/ /g, "")
+    const startsWithNumber = cleanArgument.replace(/^[^\d]*(\d)/, '$1');
+    const eliminatedComas = startsWithNumber.replace(/,+/g, ",")
+    const preliminarArray = eliminatedComas.split(',')
+    const result = preliminarArray.map((element) => parseInt(element,10))
+    return result
+}
