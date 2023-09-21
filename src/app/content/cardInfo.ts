@@ -1,3 +1,7 @@
+/*
+    In this file resides the structure and content of the cards showed on Home page
+*/
+
 export interface contentBody {
     title:string,
     body:string,

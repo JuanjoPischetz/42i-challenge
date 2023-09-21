@@ -3,7 +3,7 @@ import NonForm from '@/components/Forms/NonForm'
 
 const NonConstructibleChange = () => {
 
-  const instructions = 'Fill the array with at least one number. Numbers, coma and space allowed'
+  const instructions = 'Fill the array with at least one number, separated by commas. Numbers, coma and space allowed.'
   return (
     <div className={styles.mainContainer}>
         <div className={`${styles.innerContainer} ${styles.glassEffect}`}>

@@ -44,7 +44,13 @@ export const nonConstructibleChange = (arr : number[])=>{
 }
 
 
-//This function receives an string and returns an integer array
+/*
+    This function takes a string and returns an integer array.
+    -Removes whitespaces characters
+    -Removes comas till find a number
+    -Splits the string into a string array using coma as delimiter
+    -Parse each element to integers
+*/
 
 export const transformToIntegerArray = (argument : string) =>{
     const cleanArgument = argument.replace(/ /g, "")

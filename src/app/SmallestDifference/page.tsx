@@ -3,7 +3,7 @@ import styles from './page.module.css'
 
 const SmallestDifference = () => {
 
-  const instructions = 'Fill both arrays with at least one number. Numbers, coma and space allowed.'
+  const instructions = 'Fill both arrays with at least one number, separated by commas. Numbers, coma and space allowed.'
   return (
     <div className={styles.mainContainer}>
         <div className={`${styles.innerContainer} ${styles.glassEffect}`}>
